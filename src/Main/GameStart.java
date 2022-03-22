@@ -26,7 +26,7 @@ public class GameStart extends JComponent implements Runnable, KeyListener { //R
     }
 
     private void renderStatic(Graphics g) {
-        Graphics2D g2 = (Graphics2D)g;
+        Graphics2D g2 = (Graphics2D)g;g
         g2.drawImage(paper,0,0,null);
         g2.drawImage(player,px,py,null);
     }

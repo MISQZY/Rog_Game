@@ -3,6 +3,8 @@ package Main;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.File;
@@ -21,7 +23,7 @@ public class GameStart extends JComponent implements Runnable, KeyListener { //R
     }
 
     public void run(){ //функция run появляется при имплементировании Runnable
-         init();
+        init();
         renderStatic(getGraphics());
     }
 
@@ -73,7 +75,7 @@ public class GameStart extends JComponent implements Runnable, KeyListener { //R
 
     public static void main(String[] args) {
         GameStart game = new GameStart();
-
+        final boolean[] pressStart = {true};
         JFrame frame = new JFrame("Rog_Game"); //создание окна с именем Rog_Game
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Остановка программы после закрытия окна
         frame.setSize(width,height);
@@ -82,10 +84,20 @@ public class GameStart extends JComponent implements Runnable, KeyListener { //R
         frame.addKeyListener(game);
         frame.add(new GameStart()); //добавляем холст на фрейм
         frame.add(game);
+        JButton start = new JButton("Start");
+        start.setPreferredSize(new Dimension(100,30));
+        frame.add(start, BorderLayout.WEST);
         frame.setResizable(false); //изменяемое окно (нет)
         frame.setVisible(true); //отобразить окно
-
-        game.start(); //запустить игру
+        start.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frame.remove(start);
+                pressStart[0] = true;
+            }
+        });
+        if (pressStart[0] == true)
+            game.start(); //запустить игру
     }
 
     @Override
@@ -135,16 +147,6 @@ public class GameStart extends JComponent implements Runnable, KeyListener { //R
             py+= 1;
             renderStatic(getGraphics());
             upd = true;
-        }
-        if (e.getKeyCode()==KeyEvent.VK_SPACE){
-            renderArrow(getGraphics(), arrowNumber);
-            if(arrowNumber<10){
-            arrowNumber++;
-            } else {
-                arrowNumber = 0;
-            }
-            arrowX[arrowNumber]= px;
-            arrowY[arrowNumber]= py;
         }
     }
 

@@ -782,7 +782,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183310485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.086, y: 0.323, z: 0}
+  m_LocalPosition: {x: -0.46, y: 5.39, z: 0}
   m_LocalScale: {x: 0.6145, y: 0.6626, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1096,7 +1096,7 @@ MonoBehaviour:
   startTimeBtwAttack: 0.2
   health: 3
   speed: 1
-  damage: 2
+  damage: 1
 --- !u!58 &1465316449
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1144,11 +1144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecda4ba98051da04cb6b74e7e1e1ccf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  hp: 10
-  player: {fileID: 0}
-  rb: {fileID: 0}
-  sprite: {fileID: 0}
 --- !u!50 &1467750663
 Rigidbody2D:
   serializedVersion: 4

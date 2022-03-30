@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour
         {
             if(timeBtwAttack <= 0)
             {
-               
+               OnEnemyAttack();
             }
             else
             {
@@ -44,6 +44,7 @@ public class Enemy : MonoBehaviour
     public void OnEnemyAttack()
     {
         player.health -= damage;
+        timeBtwAttack = startTimeBtwAttack;
     }
 
     public void TakeDamage(int damage)

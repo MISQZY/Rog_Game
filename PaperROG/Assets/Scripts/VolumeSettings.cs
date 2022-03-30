@@ -7,6 +7,12 @@ public class VolumeSettings : MonoBehaviour
 {
     public AudioMixerGroup Mixer;
 
+    public void Start()
+    {
+        // GetComponentInChildren<Toggle>().isOn = PlayerPrefs.GetInt("MusicEnabled", 1) == 1;
+        // GetComponentInChildren<Slider>().value = PlayerPrefs.GetFloat("Master", 1);
+    }
+    
     private void OnEnable()
     {
         Time.timeScale = 0;
@@ -17,20 +23,24 @@ public class VolumeSettings : MonoBehaviour
     }
     public void ToggleMusic(bool enabled)
     {
-        if(enabled)
-            Mixer.audioMixer.SetFloat("Music", 0);
+        if (enabled)
+            Mixer.audioMixer.SetFloat("MusicVolume", 0);
         else  
-            Mixer.audioMixer.SetFloat("Music", -80);
+            Mixer.audioMixer.SetFloat("MusicVolume", -80);
+
+        // PlayerPrefs.SetInt("Music", enabled ? 1 : 0);    
     }
     public void ChangeVolume(float volume)
     {
-        Mixer.audioMixer.SetFloat("Master", Mathf.Lerp(-80, 0, volume));
+        Mixer.audioMixer.SetFloat("MasterVolume", Mathf.Lerp(-80, 0, volume));
+
+        // PlayerPrefs.SetFloat("Master", volume);
     }
-    public void ToggleSounds(bool volume)
+    public void ToggleSounds(bool enabled)
     {
-        if(enabled)
-            Mixer.audioMixer.SetFloat("Sounds", 0);
+        if (enabled)
+            Mixer.audioMixer.SetFloat("SoundsVolume", 0);
         else   
-            Mixer.audioMixer.SetFloat("Sounds", -80);
+            Mixer.audioMixer.SetFloat("SoundsVolume", -80);
     }
 }

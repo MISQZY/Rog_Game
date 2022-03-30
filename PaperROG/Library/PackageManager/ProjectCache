@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637838824907119757
-    m_Hash: 2989432480
+      ticks: 637842250865888627
+    m_Hash: 1964067419
   m_LockFileStatus:
     m_FilePath: D:/Homeworks/3_sem/TRPP/Game_Project/Rog_Game/PaperROG/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637838825131104253
-    m_Hash: 1323924065
+      ticks: 637842250995059656
+    m_Hash: 2848750632
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -42,9 +42,11 @@ m_PackageAssets:
       versions:
         all:
         - 5.1.0
+        - 5.1.1
         compatible:
         - 5.1.0
-        verified: 5.1.0
+        - 5.1.1
+        verified: 5.1.1
       dependencies:
       - name: com.unity.2d.common
         version: 4.1.0
@@ -423,12 +425,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.collab-proxy@1.15.12
+    - packageId: com.unity.collab-proxy@1.15.13
       testable: 0
       isDirectDependency: 1
-      version: 1.15.12
+      version: 1.15.13
       source: 1
-      resolvedPath: D:\Homeworks\3_sem\TRPP\Game_Project\Rog_Game\PaperROG\Library\PackageCache\com.unity.collab-proxy@1.15.12
+      resolvedPath: D:\Homeworks\3_sem\TRPP\Game_Project\Rog_Game\PaperROG\Library\PackageCache\com.unity.collab-proxy@1.15.13
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -446,10 +448,10 @@ m_PackageAssets:
       errors: []
       versions:
         all:
-        - 1.15.12
+        - 1.15.13
         compatible:
-        - 1.15.12
-        verified: 1.15.12
+        - 1.15.13
+        verified: 1.15.13
       dependencies:
       - name: com.unity.services.core
         version: 1.0.1
@@ -490,7 +492,7 @@ m_PackageAssets:
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-        revision: 5ca1fd4ca9f999e087d19e98afaf99905a582771
+        revision: 825774911ad2d1440ac844c9be1ae2c9b5dc7966
         path: 
     - packageId: com.unity.ide.rider@2.0.7
       testable: 0
@@ -523,7 +525,7 @@ m_PackageAssets:
         version: 1.1.1
       resolvedDependencies:
       - name: com.unity.test-framework
-        version: 1.1.29
+        version: 1.1.31
       - name: com.unity.ext.nunit
         version: 1.0.6
       - name: com.unity.modules.imgui
@@ -582,7 +584,7 @@ m_PackageAssets:
         version: 1.1.9
       resolvedDependencies:
       - name: com.unity.test-framework
-        version: 1.1.29
+        version: 1.1.31
       - name: com.unity.ext.nunit
         version: 1.0.6
       - name: com.unity.modules.imgui
@@ -610,12 +612,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
         revision: f1e8af5df9e2507088a8622d173c9a7d5a03a882
         path: 
-    - packageId: com.unity.ide.vscode@1.2.4
+    - packageId: com.unity.ide.vscode@1.2.5
       testable: 0
       isDirectDependency: 1
-      version: 1.2.4
+      version: 1.2.5
       source: 1
-      resolvedPath: D:\Homeworks\3_sem\TRPP\Game_Project\Rog_Game\PaperROG\Library\PackageCache\com.unity.ide.vscode@1.2.4
+      resolvedPath: D:\Homeworks\3_sem\TRPP\Game_Project\Rog_Game\PaperROG\Library\PackageCache\com.unity.ide.vscode@1.2.5
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -632,10 +634,10 @@ m_PackageAssets:
       errors: []
       versions:
         all:
-        - 1.2.4
+        - 1.2.5
         compatible:
-        - 1.2.4
-        verified: 1.2.4
+        - 1.2.5
+        verified: 1.2.5
       dependencies: []
       resolvedDependencies: []
       keywords: []
@@ -657,14 +659,14 @@ m_PackageAssets:
       repository:
         type: git
         url: https://github.com/Unity-Technologies/com.unity.ide.vscode.git
-        revision: 1f4f605d5c988cb610c372b5c5216c46cc8f5d30
+        revision: b0740c80bfc2440527c317109f7c3d9100132722
         path: 
-    - packageId: com.unity.test-framework@1.1.29
+    - packageId: com.unity.test-framework@1.1.31
       testable: 0
       isDirectDependency: 1
-      version: 1.1.29
+      version: 1.1.31
       source: 1
-      resolvedPath: D:\Homeworks\3_sem\TRPP\Game_Project\Rog_Game\PaperROG\Library\PackageCache\com.unity.test-framework@1.1.29
+      resolvedPath: D:\Homeworks\3_sem\TRPP\Game_Project\Rog_Game\PaperROG\Library\PackageCache\com.unity.test-framework@1.1.31
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -679,10 +681,10 @@ m_PackageAssets:
       errors: []
       versions:
         all:
-        - 1.1.29
+        - 1.1.31
         compatible:
-        - 1.1.29
-        verified: 1.1.29
+        - 1.1.31
+        verified: 1.1.31
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -718,7 +720,7 @@ m_PackageAssets:
       repository:
         type: git
         url: https://github.com/Unity-Technologies/com.unity.test-framework.git
-        revision: dac53542acdab7a12e9ebf111ac588d0e53cf483
+        revision: 438b0defc147c9be5c969ca79ff03a722b4590ed
         path: 
     - packageId: com.unity.textmeshpro@3.0.6
       testable: 0
@@ -2951,4 +2953,4 @@ m_PackageAssets:
   m_LocalPackages:
     m_LocalFileStatus: []
 m_ProjectPath: D:/Homeworks/3_sem/TRPP/Game_Project/Rog_Game/PaperROG/Packages
-m_EditorVersion: 2020.3.29f1 (2ff179115da0)
+m_EditorVersion: 2020.3.32f1 (12f8b0834f07)

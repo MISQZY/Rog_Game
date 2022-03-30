@@ -11,6 +11,13 @@ public class Gun : MonoBehaviour
     private float timeBtwShots;
     public float startTimeBTWShots;
 
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         Vector3 diference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -23,6 +30,7 @@ public class Gun : MonoBehaviour
             {
                 Instantiate(bullet, shotPoint.position, transform.rotation);
                 timeBtwShots = startTimeBTWShots;
+                audioSource.Play();
             }
         }
         else

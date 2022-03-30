@@ -11,17 +11,21 @@ public class Enemy : MonoBehaviour
     public float speed;
     public int damage;
     private Player player;
+    // public AudioSource DeathSound;
     
     private void Start()
     {
         player = FindObjectOfType<Player>();
+       // DeathSound = player.GetComponent<AudioSource>();
     }
 
     private void Update()
     {
         if(health <= 0 )
-        {
+        {   
+            
             Destroy(gameObject);
+           // DeathSound.Play();
         }
         transform.Translate(Vector2.right * speed * Time.deltaTime);
 

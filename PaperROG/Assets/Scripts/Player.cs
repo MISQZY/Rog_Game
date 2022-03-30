@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
             }
             if(health < 1 )
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                SceneManager.LoadScene(0);
             }
         }
 

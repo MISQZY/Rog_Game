@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     private float timeBtwAttack;
     public float startTimeBtwAttack;
-
+    
     public int health;
     public float speed;
     public int damage;
@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     {
         player = FindObjectOfType<Player>();
        // DeathSound = player.GetComponent<AudioSource>();
+
     }
 
     private void Update()
@@ -27,10 +28,9 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
            // DeathSound.Play();
         }
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+    }   
 
     
-    }
     public void OnTriggerStay2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
@@ -43,6 +43,7 @@ public class Enemy : MonoBehaviour
             {
                 timeBtwAttack -= Time.deltaTime;
             }
+           
         }
     }
     public void OnEnemyAttack()
